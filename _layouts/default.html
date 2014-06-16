@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Alsace Digitale">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="website" />
+    {% if page.facebook_description %}<meta property="og:description" content="{{ page.facebook_description }}" />{% endif %}
+    {% if page.facebook_image %}<meta property="og:image" content="{{ page.facebook_image }}" />{% endif %}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <a href="/" class="mainlink">
+          <h1>Hacking EdgeFest 2014</h1>
+          <!--<p class="subtitle">Festival des communautés numériques et créatives à Strasbourg</p>-->
+          <!--<p class="subsubtitle">Du 3 au 6 <span class="small-caps">JUILLET</span> 2014</p>-->
+        </a>
+      </div>
+    </header>
+    {% include nav.html %}
+    <!--{% include intro.html %}-->
+    {{ content }}
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="list-inline row">
+              <li>
+                <ul class="list-unstyled">
+                  <li><a href="http://www.edgefest.fr">Site officiel</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
