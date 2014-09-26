@@ -1,271 +1,411 @@
 @charset "UTF-8";
+/* line 1, main.sass */
 body {
   font-family: "Open Sans", sans-serif;
-  color: #282828; }
+  color: #282828;
+}
 
+/* line 5, main.sass */
 .mt-20 {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
+/* line 8, main.sass */
 h3 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 11, main.sass */
 p.anim {
   font-size: 12px;
   line-height: 14px;
   font-weight: normal;
   padding-bottom: 0;
   margin-bottom: 6px;
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 19, main.sass */
 ul.dotted li {
-  text-indent: -0.7em; }
-  ul.dotted li:before {
-    content: "•";
-    padding-left: 10px;
-    padding-right: 10px; }
+  text-indent: -0.7em;
+}
+/* line 21, main.sass */
+ul.dotted li:before {
+  content: "•";
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
+/* line 26, main.sass */
 .full {
   background-color: red;
   color: white;
   padding: 0 5px;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
 
+/* line 32, main.sass */
 section a {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
+/* line 35, main.sass */
 header {
   height: 500px;
   color: white;
   width: 100%;
-  background: url("../img/edgefest-hacking.jpg") no-repeat center top fixed;
+  background: url("/img/edgefest-hacking.jpg") no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-  header a.mainlink {
-    color: white;
-    text-decoration: none; }
-    header a.mainlink:hover, header a.mainlink:visited {
-      color: white;
-      text-decoration: none; }
-  header h1 {
-    margin-top: 164px;
-    font: 400 64px/64px "Londrina Solid";
-    text-shadow: 1px 1px black; }
-  header p.subtitle {
-    margin-top: 20px;
-    font: 400 30px/36px "gentium book basic"; }
-  header p.subsubtitle {
-    margin-top: 20px;
-    font: 400 26px/32px "gentium book basic"; }
-  header h1 {
-    text-align: center; }
-  header p.subtitle, header p.subsubtitle {
-    text-align: center; }
+  background-size: cover;
+}
+/* line 44, main.sass */
+header a.mainlink {
+  color: white;
+  text-decoration: none;
+}
+/* line 47, main.sass */
+header a.mainlink:hover, header a.mainlink:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 50, main.sass */
+header h1 {
+  margin-top: 164px;
+  font: 400 64px/64px "Londrina Solid";
+  text-shadow: 1px 1px #000000;
+}
+/* line 55, main.sass */
+header p.subtitle {
+  margin-top: 20px;
+  font: 400 30px/36px "gentium book basic";
+}
+/* line 58, main.sass */
+header p.subsubtitle {
+  margin-top: 20px;
+  font: 400 26px/32px "gentium book basic";
+}
+/* line 61, main.sass */
+header h1 {
+  text-align: center;
+}
+/* line 64, main.sass */
+header p.subtitle, header p.subsubtitle {
+  text-align: center;
+}
 
+/* line 67, main.sass */
 section {
   background-color: white;
   color: #282828;
   padding-top: 20px;
   padding-bottom: 20px;
-  min-height: 200px; }
-  section.planning h3 {
-    margin-bottom: 0;
-    background-color: #282828;
-    color: white;
-    display: inline-block;
-    font-weight: bold;
-    padding: 5px 20px;
-    border: 1px solid #282828;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
-  section.planning .table > thead > tr > th, section.planning .table > tbody > tr > th, section.planning .table > tfoot > tr > th, section.planning .table > thead > tr > td, section.planning .table > tbody > tr > td, section.planning .table > tfoot > tr > td {
-    vertical-align: middle; }
-  section.thin {
-    min-height: 0; }
-  section.summercamp h2 {
-    margin-bottom: 0; }
-  section.intro {
-    padding-top: 10px;
-    padding-bottom: 0;
-    min-height: 0; }
-    section.intro .col-xs-12 p:last-child {
-      margin-bottom: 0; }
-  section.content {
-    background-color: #34b8d0;
-    color: #282828;
-    padding-top: 20px;
-    font-size: 34px;
-    line-height: 40px;
-    font-weight: bold;
-    text-align: center; }
-  section.sponsors h2 {
-    margin-bottom: 20px; }
-  section.startups .startup {
-    margin-bottom: 20px; }
-    section.startups .startup .logo {
-      text-align: center; }
+  min-height: 200px;
+}
+/* line 74, main.sass */
+section.planning h3 {
+  margin-bottom: 0;
+  background-color: #282828;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: 1px solid #282828;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 84, main.sass */
+section.planning .table > thead > tr > th, section.planning .table > tbody > tr > th, section.planning .table > tfoot > tr > th, section.planning .table > thead > tr > td, section.planning .table > tbody > tr > td, section.planning .table > tfoot > tr > td {
+  vertical-align: middle;
+}
+/* line 86, main.sass */
+section.thin {
+  min-height: 0;
+}
+/* line 88, main.sass */
+section.games {
+  background-color: #3a3a3a;
+}
+/* line 90, main.sass */
+section.summercamp h2 {
+  margin-bottom: 0;
+}
+/* line 92, main.sass */
+section.intro {
+  padding-top: 10px;
+  padding-bottom: 0;
+  min-height: 0;
+}
+/* line 96, main.sass */
+section.intro .col-xs-12 p:last-child {
+  margin-bottom: 0;
+}
+/* line 98, main.sass */
+section.content {
+  background-color: #34b8d0;
+  color: #282828;
+  padding-top: 20px;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 106, main.sass */
+section.sponsors h2 {
+  margin-bottom: 20px;
+}
+/* line 109, main.sass */
+section.startups .startup {
+  margin-bottom: 20px;
+}
+/* line 111, main.sass */
+section.startups .startup .logo {
+  text-align: center;
+}
 
+/* line 114, main.sass */
 .nav {
   min-height: auto;
   margin: 0 0;
   padding: 0;
   background-color: #282828;
-  font-size: 1.1em;
-  margin-bottom: 2em; }
+  font-size: 1.2em;
+}
 
+/* line 121, main.sass */
+.hack-img {
+  max-width: 100%;
+}
+
+/* line 124, main.sass */
+.row-games {
+  border-bottom: 1px solid #b5ed6a;
+  margin-bottom: 0.7em;
+}
+
+/* line 128, main.sass */
 nav {
   min-height: 0;
   margin-bottom: 0;
   padding: 1em 0;
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 134, main.sass */
 .nav-list {
   padding-left: 0;
   margin-left: 0;
-  margin-bottom: 0; }
-  .nav-list li {
-    text-align: center;
-    display: inline;
-    margin: 0 1%;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    .nav-list li:before {
-      content: "|";
-      color: #bbbbbb;
-      position: relative;
-      right: 1%; }
-    .nav-list li:first-child:before {
-      content: ""; }
-  .nav-list a {
-    transition: background-color 0.3s ease-in-out 0s;
-    text-decoration: none;
-    font: 800 1em "Open sans";
-    font-variant: small-caps;
-    color: #bbbbbb;
-    transition: color 0.3s ease-in-out 0s; }
-    .nav-list a:visited {
-      text-decoration: none;
-      font: 800 1em "Open sans";
-      font-variant: small-caps;
-      color: #bbbbbb;
-      transition: color 0.3s ease-in-out 0s; }
-    .nav-list a:hover {
-      color: white;
-      transition: color 0.1s ease-in-out 0s; }
+  margin-bottom: 0;
+}
+/* line 138, main.sass */
+.nav-list li {
+  text-align: center;
+  display: inline;
+  margin: 0 1%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 146, main.sass */
+.nav-list li:before {
+  content: "|";
+  color: #BBB;
+  position: relative;
+  right: 1%;
+}
+/* line 151, main.sass */
+.nav-list li:first-child:before {
+  content: "";
+}
+/* line 153, main.sass */
+.nav-list a {
+  transition: background-color 0.3s ease-in-out 0s;
+  text-decoration: none;
+  font: 800 1em "Open sans";
+  font-variant: small-caps;
+  color: #BBB;
+  transition: color 0.3s ease-in-out 0s;
+}
+/* line 160, main.sass */
+.nav-list a:visited {
+  text-decoration: none;
+  font: 800 1em "Open sans";
+  font-variant: small-caps;
+  color: #BBB;
+  transition: color 0.3s ease-in-out 0s;
+}
+/* line 166, main.sass */
+.nav-list a:hover {
+  color: white;
+  transition: color 0.1s ease-in-out 0s;
+}
 
+/* line 171, main.sass */
 .table th {
-  text-align: center; }
+  text-align: center;
+}
+/* line 173, main.sass */
 .table td {
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
+/* line 176, main.sass */
 .table tr td:first-child {
   text-align: right;
   vertical-align: top;
   padding: 0 4px 8px 8px;
   font-weight: 300;
-  font-size: 12px; }
+  font-size: 12px;
+}
+/* line 182, main.sass */
 .table td.withcontent {
   padding: 2px;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
+/* line 186, main.sass */
 h2 {
   font: 800 24px/28px "open sans";
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+}
 
+/* line 190, main.sass */
 table a {
   font-size: 20px;
   line-height: 28px;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
+/* line 202, main.sass */
 .startupstories, .startupstories a {
   background-color: #f16e25 !important;
   color: white;
-  transition: all 0.3s ease-in-out 0s; }
+  transition: all 0.3s ease-in-out 0s;
+}
 
+/* line 207, main.sass */
 .edgenight, .edgenight a {
   background-color: #7aa922 !important;
   color: white;
-  transition: all 0.3s ease-in-out 0s; }
+  transition: all 0.3s ease-in-out 0s;
+}
 
+/* line 212, main.sass */
 .edgeday, .edgeday a {
   background-color: #e72b80 !important;
   color: white;
-  transition: all 0.3s ease-in-out 0s; }
+  transition: all 0.3s ease-in-out 0s;
+}
 
+/* line 217, main.sass */
 .hackathon, .hackathon a {
   background-color: #4dc4d6 !important;
   color: white;
-  transition: all 0.3s ease-in-out 0s; }
+  transition: all 0.3s ease-in-out 0s;
+}
 
+/* line 222, main.sass */
 .barcampalsace, .barcampalsace a {
   background-color: #faae0b !important;
   color: white;
-  transition: all 0.3s ease-in-out 0s; }
+  transition: all 0.3s ease-in-out 0s;
+}
 
+/* line 227, main.sass */
 .summercamp, .summercamp a {
   background-color: #9e2698 !important;
   color: white;
-  transition: all 0.3s ease-in-out 0s; }
+  transition: all 0.3s ease-in-out 0s;
+}
 
+/* line 233, main.sass */
 table .startupstories:hover, table .startupstories:hover a {
-  background-color: #f48e55 !important; }
+  background-color: #f48e55 !important;
+}
+/* line 235, main.sass */
 table .edgenight:hover, table .edgenight:hover a {
-  background-color: #99d42a !important; }
+  background-color: #99d42a !important;
+}
+/* line 237, main.sass */
 table .edgeday:hover, table .edgeday:hover a {
-  background-color: #ec599b !important; }
+  background-color: #ec599b !important;
+}
+/* line 239, main.sass */
 table .hackathon:hover, table .hackathon:hover a {
-  background-color: #76d2e0 !important; }
+  background-color: #76d2e0 !important;
+}
+/* line 241, main.sass */
 table .barcampalsace:hover, table .barcampalsace:hover a {
-  background-color: #fbbf3d !important; }
+  background-color: #fbbf3d !important;
+}
+/* line 243, main.sass */
 table .summercamp:hover, table .summercamp:hover a {
-  background-color: #c730c0 !important; }
+  background-color: #c730c0 !important;
+}
 
+/* line 246, main.sass */
 footer {
   min-height: 0;
   padding: 1em 0;
   text-align: center;
   background-color: #282828;
-  color: white; }
-  footer ul.row > li {
-    text-align: left;
-    padding: 0 2em;
-    vertical-align: top; }
-    footer ul.row > li > ul > li {
-      margin-bottom: 0.2em; }
-      footer ul.row > li > ul > li.title {
-        margin-bottom: 0.6em;
-        font-size: 120%;
-        font-weight: bold; }
-      footer ul.row > li > ul > li a {
-        color: white; }
-
-img.big {
-    max-width: 100%;
-    height: auto;
+  color: white;
+}
+/* line 253, main.sass */
+footer ul.row > li {
+  text-align: left;
+  padding: 0 2em;
+  vertical-align: top;
+}
+/* line 257, main.sass */
+footer ul.row > li > ul > li {
+  margin-bottom: 0.2em;
+}
+/* line 259, main.sass */
+footer ul.row > li > ul > li.title {
+  margin-bottom: 0.6em;
+  font-size: 120%;
+  font-weight: bold;
+}
+/* line 263, main.sass */
+footer ul.row > li > ul > li a {
+  color: white;
 }
 
+/* line 266, main.sass */
 ul.sponsors {
-  text-align: center; }
-  ul.sponsors li {
-    padding: 0;
-    margin: 0 20px 20px 0; }
-  ul.sponsors img {
-    height: auto;
-    max-width: 300px;
-    max-height: 70px; }
-    ul.sponsors img.smaller {
-      max-height: 60px; }
+  text-align: center;
+}
+/* line 268, main.sass */
+ul.sponsors li {
+  padding: 0;
+  margin: 0 20px 20px 0;
+}
+/* line 271, main.sass */
+ul.sponsors img {
+  height: auto;
+  max-width: 300px;
+  max-height: 70px;
+}
+/* line 275, main.sass */
+ul.sponsors img.smaller {
+  max-height: 60px;
+}
 
+/* line 279, main.sass */
 p.date, p.venue {
-  margin: 0; }
+  margin: 0;
+}
+/* line 281, main.sass */
 p.type {
   margin: 0;
   margin-bottom: 10px;
-  font-weight: 800; }
+  font-weight: 800;
+}
 
+/* line 286, main.sass */
 .sticky {
   background-color: red;
   color: white;
@@ -274,100 +414,153 @@ p.type {
   font-weight: 600;
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 296, main.sass */
 .small-caps {
   font-variant: small-caps;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
+/* line 300, main.sass */
 .co {
-  color: #34b8d0; }
+  color: #34b8d0;
+}
 
 @media screen and (max-width: 767px) {
+  /* line 304, main.sass */
   body {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+  }
 
+  /* line 307, main.sass */
   section {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px;
+  }
+}
 @media screen and (max-width: 510px) {
+  /* line 312, main.sass */
   header h1 {
-    margin-top: 150px; } }
-/**** MEDIA QUERIES **** */
+    margin-top: 150px;
+  }
+}
+/***** MEDIA QUERIES **** */
 /*                              319px */
 @media screen and (max-width: 19.938em) {
+  /* line 319, main.sass */
   .nav-list {
     width: 100%;
-    padding-left: 0; }
-    .nav-list li {
-      width: 100%; } }
+    padding-left: 0;
+  }
+  /* line 321, main.sass */
+  .nav-list li {
+    width: 100%;
+  }
+}
 /*                              500px */
 @media screen and (max-width: 31.25em) {
+  /* line 327, main.sass */
   nav {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+  }
 
+  /* line 330, main.sass */
   .nav-list {
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    padding-left: 0; }
-    .nav-list li {
-      width: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      padding: 0.5em;
-      color: transparent;
-      transition: background-color 0.3s ease-in-out 0s;
-      display: block; }
-      .nav-list li:hover, .nav-list li:active {
-        background-color: #545454;
-        transition: background-color 0.1s ease-in-out 0s; }
-      .nav-list li:first-child a {
-        border-top: 0; }
-    .nav-list a {
-      display: block;
-      margin: 0 !important;
-      padding: 0.4em 0 !important;
-      width: 100%;
-      color: white;
-      text-align: center; }
-      .nav-list a:hover, .nav-list a:visited {
-        color: white;
-        text-align: center; } }
+    padding-left: 0;
+  }
+  /* line 335, main.sass */
+  .nav-list li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.5em;
+    color: transparent;
+    transition: background-color 0.3s ease-in-out 0s;
+    display: block;
+  }
+  /* line 342, main.sass */
+  .nav-list li:hover, .nav-list li:active {
+    background-color: #545454;
+    transition: background-color 0.1s ease-in-out 0s;
+  }
+  /* line 345, main.sass */
+  .nav-list li:first-child a {
+    border-top: 0;
+  }
+  /* line 347, main.sass */
+  .nav-list a {
+    display: block;
+    margin: 0 !important;
+    padding: 0.4em 0 !important;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  /* line 354, main.sass */
+  .nav-list a:hover, .nav-list a:visited {
+    color: white;
+    text-align: center;
+  }
+}
 /*                              501px                    750px */
 @media screen and (min-width: 31.313em) and (max-width: 46.875em) {
+  /* line 360, main.sass */
   nav {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+  }
 
+  /* line 363, main.sass */
   .nav-list {
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    padding-left: 0; }
-    .nav-list li {
-      float: left;
-      width: 33.333%;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      padding: 0.5em;
-      color: transparent;
-      transition: background-color 0.3s ease-in-out 0s; }
-      .nav-list li:hover, .nav-list li:active {
-        background-color: #545454;
-        transition: background-color 0.1s ease-in-out 0s; }
-    .nav-list a {
-      display: block;
-      margin: 0 !important;
-      padding: 0.4em 0 !important;
-      width: 100%; } }
+    padding-left: 0;
+  }
+  /* line 368, main.sass */
+  .nav-list li {
+    float: left;
+    width: 33.333%;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.5em;
+    color: transparent;
+    transition: background-color 0.3s ease-in-out 0s;
+  }
+  /* line 375, main.sass */
+  .nav-list li:hover, .nav-list li:active {
+    background-color: #545454;
+    transition: background-color 0.1s ease-in-out 0s;
+  }
+  /* line 378, main.sass */
+  .nav-list a {
+    display: block;
+    margin: 0 !important;
+    padding: 0.4em 0 !important;
+    width: 100%;
+  }
+}
 /*                              750px */
 @media screen and (max-width: 46.875em) {
+  /* line 387, main.sass */
   .nav-list li {
-    margin: 0; }
-    .nav-list li:before {
-      content: ""; }
+    margin: 0;
+  }
+  /* line 389, main.sass */
+  .nav-list li:before {
+    content: "";
+  }
+  /* line 391, main.sass */
   .nav-list a {
-    color: white; }
-    .nav-list a:hover, .nav-list a:visited, .nav-list a:active {
-      color: white; } }
+    color: white;
+  }
+  /* line 393, main.sass */
+  .nav-list a:hover, .nav-list a:visited, .nav-list a:active {
+    color: white;
+  }
+}
